@@ -11,14 +11,9 @@ public class Testbase {
 
     @BeforeMethod
     public void setUp() {
-        // مثال لتهيئة ChromeDriver
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://automationexercise.com/");
-    }
-    @Test
-    public void testSomething() {
-        System.out.println("Test is running!");
     }
 
     @AfterMethod
