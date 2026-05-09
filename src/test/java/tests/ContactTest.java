@@ -88,10 +88,10 @@ public class ContactTest extends Testbase {
     }
 
 
-    @Override
-    public void testSomething() {
-        super.testSomething();
-    }
+//    @Override
+//    public void testSomething() {
+//        super.testSomething();
+//    }
 
     // CONT_3
     // Scenario : Completely empty form

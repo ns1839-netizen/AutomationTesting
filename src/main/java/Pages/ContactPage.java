@@ -54,9 +54,14 @@ public class ContactPage extends PageBase {
         subjectField.sendKeys(subject);
     }
 
+//    public void enterMessage(String message) {
+//        messageField.clear();
+//        messageField.sendKeys(message);
+//    }
+
     public void enterMessage(String message) {
-        messageField.clear();
-        messageField.sendKeys(message);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].value = arguments[1];", messageField, message);
     }
 
     public void uploadFile(String filePath) {
